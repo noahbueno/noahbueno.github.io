@@ -1,0 +1,30 @@
+
+body {
+ font-family:Arial, sans-serif, sans-serif;
+
+}
+#logo {
+max-width: 100%;
+height: auto;
+}
+
+nav {
+display: flex;
+justify-content: flex-end;
+flex-direction: row;
+gap: 112px;
+text-decoration: none;
+margin-bottom: 
+}
+
+nav a {
+margin-right: 50px;
+margin-left: 80px;
+color: black;
+font-weight: bolder;
+}
+
+.main-menu {
+border: 7px solid  red;
+}
+
