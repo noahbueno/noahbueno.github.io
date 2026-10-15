@@ -1,30 +1,212 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Electrolize&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
- font-family:Arial, sans-serif, sans-serif;
-
+    font-family: "Electrolize", sans-serif;
+    font-size: 0.938rem;
+    background-color: #000000;
+    color: #ffffff;
 }
+
+a {
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#background {
+    background-image: url('/images/background01.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
 #logo {
-max-width: 100%;
-height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
-nav {
-display: flex;
-justify-content: flex-end;
-flex-direction: row;
-gap: 112px;
-text-decoration: none;
-margin-bottom: 
-}
-
-nav a {
-margin-right: 50px;
-margin-left: 80px;
-color: black;
-font-weight: bolder;
+header {
+    height: 6.25rem;
+    display: flex;
+    align-items: center;
 }
 
 .main-menu {
-border: 7px solid  red;
+    border: 2px solid #ffffff;
+    overflow: hidden;
 }
 
+.main-menu img {
+    height: auto; 
+    width: 150px; 
+    display: block;  
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+nav .nav-link {
+    color: #ffffff; 
+    padding-left: rem;
+}
+
+nav .nav-link:hover {
+    color: red;
+    opacity: 0.8;
+}
+
+.home-page {
+    min-height: 31.25rem;
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+}
+
+.home-section {
+    flex: 1;
+    padding-left: 1rem;
+}
+
+.about-section {
+    flex: 1;
+    padding-left: 1rem;
+    border-left: 2px solid #ffffff;
+}
+
+.home-page h2 {
+    font-size: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#home-description {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+#about-text {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+#about-text {
+    padding-right: 1.2rem;
+}
+
+#games-heading {
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#games-heading img {
+    width: 150px;
+    height: auto;
+}
+
+#games-heading h1 {
+    font-size: 2.1875rem;
+    margin: 0;
+}
+
+.game-section {
+    background-image: url('/images/background01.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 1rem;
+}
+
+.game-card {
+    flex: 1;
+    text-align: center;
+}
+
+.games-img {
+    border: 1px solid #ffffff;
+    max-width: 100%;
+    height: auto;
+}
+
+.game-description {
+    color: #ffffff;
+    font-weight: bolder;
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.attribution {
+    color: #ff0000;
+    font-size: 10px;
+    display: inline-block;
+    padding-top: 15px;
+}
+
+.contact-us {
+    border: 2px solid #ffffff;
+    padding: 1.5rem;
+}
+
+#contact-title {
+    font-size: 2.1875rem;
+    font-weight: bold;
+}
+
+#contact-info p {
+    padding-top: 1rem;
+}
+
+#contact-info a {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1100px) {
+    .game-section {
+        flex-direction: column;
+    }
+    
+    .game-description {
+        padding-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 815px) {
+    .home-page {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    .about-section {
+        border-left: none;
+        border-top: 2px solid #ffffff;
+        padding-top: 2rem;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        gap: 0.5rem;
+    }
+    
+    nav .nav-link {
+        font-size: 12px;
+        padding: 0.5rem;
+    }
+}
