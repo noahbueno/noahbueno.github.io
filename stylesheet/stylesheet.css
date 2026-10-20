@@ -37,8 +37,8 @@ header {
 }
 
 .main-menu {
+    background-color: black;
     border: 2px solid #ffffff;
-    overflow: hidden;
 }
 
 .main-menu img {
@@ -48,6 +48,7 @@ header {
 }
 
 nav {
+
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -56,7 +57,6 @@ nav {
 
 nav .nav-link {
     color: #ffffff; 
-    padding-left: rem;
 }
 
 nav .nav-link:hover {
@@ -65,21 +65,32 @@ nav .nav-link:hover {
 }
 
 .home-page {
-    min-height: 31.25rem;
+    min-height: 22rem;
     width: 100%;
     display: flex;
     gap: 2rem;
 }
 
 .home-section {
+    width: 100%;
+    max-width: 26.75rem;
     flex: 1;
-    padding-left: 1rem;
+    padding-top: 2.5rem;
+    padding-left: 2rem;
 }
 
 .about-section {
     flex: 1;
-    padding-left: 1rem;
+    padding-top: 2.5rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
     border-left: 2px solid #ffffff;
+}
+
+.home-page h1 {
+    font-size: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
 }
 
 .home-page h2 {
@@ -117,7 +128,7 @@ nav .nav-link:hover {
     height: auto;
 }
 
-#games-heading h1 {
+#games-heading h3 {
     font-size: 2.1875rem;
     margin: 0;
 }
