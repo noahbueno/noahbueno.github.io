@@ -76,7 +76,7 @@ nav .nav-link:hover {
     max-width: 26.75rem;
     flex: 1;
     padding-top: 2.5rem;
-    padding-left: 2rem;
+    padding-left: 1.5rem;
 }
 
 .about-section {
@@ -96,7 +96,7 @@ nav .nav-link:hover {
 .home-page h2 {
     font-size: 3rem;
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 
 #home-description {
