@@ -226,6 +226,9 @@ nav .nav-link:hover {
         padding-left: 1rem;
         padding-bottom: 1rem;
     }
+    .games-img {
+        width: 75%;
+    }
 }
 
 @media screen and (max-width: 600px) {
