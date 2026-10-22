@@ -208,7 +208,7 @@ nav .nav-link:hover {
     }
 }
 
-@media screen and (max-width: 815px) {
+@media screen and (max-width: 850px) {
     .home-page {
         flex-direction: column;
         gap: 3rem;
@@ -225,6 +225,10 @@ nav .nav-link:hover {
         padding-top: 2rem;
         padding-left: 1rem;
         padding-bottom: 1rem;
+    }
+    
+    .game-description {
+        max-width: 42ch;
     }
     .games-img {
         width: 75%;
