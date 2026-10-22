@@ -19,12 +19,6 @@ a {
     text-decoration: none;
 }
 
-#background {
-    background-image: url('/images/background01.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
 #logo {
     max-width: 100%;
     height: auto;
@@ -39,6 +33,8 @@ header {
 .main-menu {
     background-color: black;
     border: 2px solid #ffffff;
+      position: sticky;
+    top: 0;
 }
 
 .main-menu img {
@@ -53,10 +49,12 @@ nav {
     display: flex;
     justify-content: space-evenly;
     gap: 2rem;
+  
 }
 
-nav .nav-link {
+nav a {
     color: #ffffff; 
+    font-size: 1.5rem
 }
 
 nav .nav-link:hover {
@@ -65,10 +63,14 @@ nav .nav-link:hover {
 }
 
 .home-page {
-    min-height: 22rem;
+    min-height: 21rem;
     width: 100%;
     display: flex;
     gap: 2rem;
+     background-image: url('/images/background01.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
 }
 
 .home-section {
@@ -76,27 +78,30 @@ nav .nav-link:hover {
     max-width: 26.75rem;
     flex: 1;
     padding-top: 2.5rem;
-    padding-left: 1.5rem;
+    padding-left: 2rem;
 }
 
 .about-section {
     flex: 1;
+    max-width: 122ch;
     padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
     padding-left: 2rem;
-    padding-bottom: 2rem;
+    padding-right: 1.5rem;
     border-left: 2px solid #ffffff;
+
 }
 
 .home-page h1 {
     font-size: 3rem;
-    padding-top: 1rem;
     padding-bottom: 2rem;
+    scroll-margin-top: 110px;
 }
 
 .home-page h2 {
     font-size: 3rem;
-    padding-top: 1rem;
     padding-bottom: 2rem;
+    
 }
 
 #home-description {
@@ -115,32 +120,35 @@ nav .nav-link:hover {
     padding-right: 1.2rem;
 }
 
+
+.game-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url('/images/background01.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    gap: 2rem;
+
+}
+
 #games-heading {
     background-color: #000000;
     border: 2px solid #ffffff;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+        scroll-margin-top: 110px;
 }
 
 #games-heading img {
     width: 150px;
     height: auto;
+    float: left;
 }
 
 #games-heading h3 {
     font-size: 2.1875rem;
-    margin: 0;
-}
+    padding-top: 1.5rem;
 
-.game-section {
-    background-image: url('/images/background01.jpg');
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
-    display: flex;
-    gap: 2rem;
-    padding: 2rem 1rem;
 }
 
 .game-card {
@@ -155,10 +163,13 @@ nav .nav-link:hover {
 }
 
 .game-description {
+    max-width: 50ch;
     color: #ffffff;
+    font-size: 1.3rem;
     font-weight: bolder;
     padding: 1.5rem;
     text-align: left;
+    margin-inline: auto;
 }
 
 .attribution {
@@ -182,9 +193,10 @@ nav .nav-link:hover {
     padding-top: 1rem;
 }
 
-#contact-info a {
+*#contact-info a {
     color: #ffffff;
 }
+
 
 @media screen and (max-width: 1100px) {
     .game-section {
@@ -202,6 +214,11 @@ nav .nav-link:hover {
         gap: 3rem;
     }
     
+    .home-section {
+        padding-top: 2rem;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+    }
     .about-section {
         border-left: none;
         border-top: 2px solid #ffffff;
@@ -217,7 +234,7 @@ nav .nav-link:hover {
     }
     
     nav .nav-link {
-        font-size: 12px;
+        font-size: 1.2rem;
         padding: 0.5rem;
     }
 }
