@@ -228,8 +228,9 @@ nav .nav-link:hover {
     }
     
     .game-description {
-        max-width: 35ch;
+        max-width: 25ch;
     }
+    
     .games-img {
         width: 75%;
     }
